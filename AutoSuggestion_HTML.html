@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="AutoSuggestion_CSS.css">
+    <script type="text/javascript" src="AutoSuggestion_JS.js"></script>
+</head>
+
+<body onclick="goOnPage()">
+
+<form >
+  <div class="container" onclick="goOnPage()">
+    <center><h2>Auto Suggestions</h2></center>
+    <hr>
+
+    <div>
+    <input type="text" id="input" placeholder="Type your text here..." name="input" onkeyup="Search()" >
+    </div>
+
+    <div class="auto-suggestion" onclick="goOnPage()">
+    <ul id="suggestion"></ul> 
+    </div>
+    <div class = "bottom-space">
+        </div>
+  </div>
+</form>
+
+</body>
+</html>
