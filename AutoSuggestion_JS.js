@@ -25,12 +25,13 @@ function Search() {
                 countOfCharMatching = countOfCharMatching + 1;
                 initialSuggestions = document.getElementById("suggestion").innerHTML;
             }
-            else {
-                document.getElementById("suggestion").innerHTML = "No suggestions";
-            }
         }
+        if(document.getElementById("suggestion").innerHTML.length == "")
+        {
+            document.getElementById("suggestion").innerHTML = "No suggestions ";
         }
     }
+}
 
 
 function clickOnList(valueOfList) {
